@@ -11,6 +11,18 @@ public class Stack {
         linkedList.addFirst(data);
     }
 
+    //adding peek method
+    public void peek(){
+        System.out.println(linkedList.peek());
+    }
+
+    //adding pop method till stack is empty
+    public void pop (){
+        while (linkedList.size()!=0){
+            linkedList.pop();
+        }
+    }
+
     //printing list
     public void printStack(){
         System.out.println(linkedList.toString());
@@ -24,6 +36,8 @@ public class Stack {
         stack.push(70);
         stack.push(30);
         stack.push(56);
+        stack.peek();
+        stack.pop();
         stack.printStack();
     }
 }
